@@ -8,6 +8,19 @@ This repository contains the frontend application for **SecureMyAir** (GAES), bu
 - **Language**: JavaScript (ES6+)
 - **Package manager**: npm
 
+### Environment variables
+
+Create a `.env` file in the project root (copy from `.env.example`). Only variables prefixed with `REACT_APP_` are exposed to the app.
+
+| Variable | Description |
+|----------|-------------|
+| `REACT_APP_API_URL` | API base URL for backend requests (e.g. `http://localhost/php/gaes` or `https://api.securemyair.com/gaes`). No trailing slash. |
+
+```bash
+cp .env.example .env
+# Edit .env with your values.
+```
+
 ### Getting started
 
 1. **Install dependencies**
